@@ -113,8 +113,26 @@ h4 {
 }
 
 .navbar-toggler-icon {
-	background-color: #565FF2;
+	background-color: #CAFF54;
 }
+
+@media (max-width: 992px) {
+    .custom-navbar .navbar-nav {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
+@media (min-width: 993px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .custom-navbar .navbar-nav {
+        display: flex;
+    }
+}
+
 .ingressos-btn-navbar {
 	background-color: #565FF2;
 	color: #FFFFFF; 
@@ -176,18 +194,13 @@ h4 {
 }
 
 .flex-container {
-    display: flex; 
-    justify-content: space-between; 
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
 }
-
-.flex-container > div {
-    width: 70%; 
-}
-
-.flex-container > img {
-    width: 50%; 
-    object-fit: cover; 
-	margin-left: 20px;
+.flex-container .img-fluid {
+	border-radius: 0.25rem;
+	padding: 20px;
 }
 
 .text-box-purple {
@@ -214,6 +227,39 @@ h4 {
 .img-fluid {
     width: 100%; 
     object-fit: cover; 
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.keynote-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+	text-align: justify;
+}
+
+.keynote-box {
+    background-color: #565FF2;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.keynote-content {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.keynote-content h2 {
+	color: #CAFF54;
 }
 
 .footer {
