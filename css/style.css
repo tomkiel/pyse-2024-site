@@ -332,3 +332,66 @@ iframe {
 	font-size: large;
 	border-radius: 0.25rem;
 }
+.talk-content{
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+	width: 70%; /* Define a largura como 50% da tela */
+	margin-left: auto; /* Centraliza horizontalmente */
+	margin-right: auto; /* Centraliza horizontalmente */
+}
+.speaker {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	width: 50%; /* Define a largura como 50% da tela */
+	margin-left: auto; /* Centraliza horizontalmente */
+	margin-right: auto; /* Centraliza horizontalmente */
+}
+.speaker h4{
+	color: #565FF2;
+}
+.talk-left-content {
+	text-align: left;
+	flex: 1;
+}
+.talk-right-content {
+	text-align: right;
+	flex: 1;
+}
+.speaker-bio {
+	display: flex; /* Define a bio como um flex container */
+	align-items: center; /* Alinha os itens verticalmente */
+	margin-left: 20px;
+}
+.speaker-bio p {
+	margin: 0;
+}
+.speaker-name {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.talk-resume {
+	font-size: 18px;
+	text-align: center; /* Centraliza o resumo */
+}
+.talk-title {
+	text-align: center; /* Centraliza o título */
+	text-transform: uppercase;
+}
+.speaker-img {
+	border-radius: 50%;
+	max-width: 200px;
+	height: auto;
+	object-fit: cover;
+}
+.talk-box {
+background-color: #CAFF54;
+padding: 20px;
+align-items: center;
+gap: 20px;
+}
+.talk-box p{
+	color: #000000;
+}
