@@ -117,31 +117,31 @@ h4 {
 
 .ingressos-btn-navbar {
 	background-color: #565FF2;
-	color: #FFFFFF; 
-	padding: 0.375rem 0.75rem; 
-	text-decoration: none; 
-	border-radius: 0.25rem; 
-	margin-left: auto; 
+	color: #FFFFFF;
+	padding: 0.375rem 0.75rem;
+	text-decoration: none;
+	border-radius: 0.25rem;
+	margin-left: auto;
 }
 .ingressos-btn-navbar:hover {
-	opacity: 0.8; 
-	background-color: #FFFFFF; 
+	opacity: 0.8;
+	background-color: #FFFFFF;
 	color:#565FF2;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 
 .ingressos-btn {
     background-color: #565FF2;
-    color: #FFFFFF; 
-    width: 80%; 
-    padding: 20px; 
-    text-align: center; 
-    border-radius: 0.25rem; 
-    text-decoration: none; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    color: #FFFFFF;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ingressos-btn:hover {
@@ -169,14 +169,14 @@ h4 {
 .text-box {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 80%; 
-    padding: 20px; 
-    margin: auto; 
-    text-align: justify; 
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
 }
 
 .flex-container {
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -186,13 +186,13 @@ h4 {
 }
 
 .text-box-purple {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    background-color: #565FF2; 
-    color: #FFFFFF; 
-    padding: 20px; 
-    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #565FF2;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 0.25rem;
 	text-align: justify;;
 }
@@ -202,13 +202,13 @@ h4 {
 }
 
 .text-box-purple .img-logo {
-    text-align: center; 
-	width: 100%; 
+    text-align: center;
+	width: 100%;
 }
 
 .img-fluid {
-    width: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    object-fit: cover;
 }
 
 .round-image {
@@ -269,73 +269,73 @@ iframe {
 
 
 .footer {
-    background-color: #565FF2; 
-    color: #FFFFFF; 
-    padding: 20px 0 0 0; 
+    background-color: #565FF2;
+    color: #FFFFFF;
+    padding: 20px 0 0 0;
 	text-align: center;
 	border-radius: 0.25rem;
 }
 
 .footer-social-icons {
     list-style: none;
-    padding: 20px 0 0 0; 
+    padding: 20px 0 0 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .email-link {
 	padding-top: 10px;
-    font-size: 25px; 
-	text-decoration: none; 
-	color: #CAFF54; 
+    font-size: 25px;
+	text-decoration: none;
+	color: #CAFF54;
 }
 .email-link:hover {
-	color: #FFFFFF; 
-	text-decoration: none; 
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .footer-links {
-    text-align: left; 
+    text-align: left;
 }
 .footer-links a:hover {
-	color: #FFFFFF; 
+	color: #FFFFFF;
 }
 .footer-links a {
-    display: block; 
+    display: block;
     text-decoration: none;
-    color: #CAFF54; 
+    color: #CAFF54;
 }
 .footer p {
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 .footer-social-icons li {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 .footer-social-icons a {
     text-decoration: none;
-    font-size: 50px; 
-    color: #CAFF54; 
+    font-size: 50px;
+    color: #CAFF54;
 }
 .footer-social-icons a:hover {
-	text-decoration: none; 
-	color: #FFFFFF; 
+	text-decoration: none;
+	color: #FFFFFF;
 }
 .text-footer {
-	box-sizing: border-box; 
-	width: 100%; 
+	box-sizing: border-box;
+	width: 100%;
 	background-color: #CAFF54;
-	color: #565FF2; 
-	text-align: center; 
+	color: #565FF2;
+	text-align: center;
 	font-size: large;
 	border-radius: 0.25rem;
 }
 .talk-content{
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 90%; /* Define a largura como 50% da tela */
 	margin-left: auto; /* Centraliza horizontalmente */
 	margin-right: auto; /* Centraliza horizontalmente */
