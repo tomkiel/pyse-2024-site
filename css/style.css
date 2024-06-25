@@ -262,9 +262,14 @@ iframe {
 .map-box {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 600px; /* Adjust width to match map */
-    margin: auto; /* Center the map box */
-    overflow: hidden; /* Hide overflowing map */
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	margin: auto;
+    overflow: hidden;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 
