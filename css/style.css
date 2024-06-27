@@ -176,10 +176,11 @@ h4 {
 }
 
 .flex-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
 .flex-container .img-fluid {
 	border-radius: 0.25rem;
 	padding: 20px;
@@ -395,12 +396,33 @@ iframe {
 	height: auto;
 	object-fit: cover;
 }
+
+.text-box-hotel {
+    padding: 15px;
+	background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+
+.text-box-hotel h4 {
+	color: #565FF2;
+}
+
+.text-box-hotel h5 {
+	font-weight: bold;
+}
+
 .talk-box {
 background-color: #CAFF54;
 padding: 20px;
 align-items: center;
 gap: 20px;
 }
+
 .talk-box p{
 	color: #000000;
 }
