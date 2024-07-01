@@ -426,3 +426,107 @@ gap: 20px;
 .talk-box p{
 	color: #000000;
 }
+
+/* Tabelas */
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 6px 20px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 6px 20px;
+    word-break: normal;
+}
+
+.tg .tg-o2sj {
+    background-color: #565ff2;
+    border-color: #ffffff;
+    color: #caff54;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: -1px;
+    vertical-align: middle;
+    will-change: transform;
+}
+
+.tg .tg-4h11 {
+    background-color: #565ff2;
+    border-color: #ffffff;
+    color: #caff54;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-3cyx {
+    border-color: #ffffff;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-44qx {
+    border-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-5ydw {
+    border-color: #ffffff;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: -1px;
+    vertical-align: top;
+    will-change: transform;
+}
+
+.tg .tg-8pns {
+    background-color: #caff54;
+    border-color: #ffffff;
+    color: #565ff2;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    top: -1px;
+    vertical-align: top;
+    will-change: transform;
+}
+
+.tg .tg-ct1n {
+    background-color: #caff54;
+    border-color: #ffffff;
+    color: #565ff2;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tg .tg-nlvd {
+    background-color: #565ff2;
+    border-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
