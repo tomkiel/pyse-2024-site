@@ -530,3 +530,28 @@ gap: 20px;
     text-align: center;
     vertical-align: middle;
 }
+
+.logo-patrocinador-1 {
+	width: auto;
+	height: 150px;
+	object-fit: cover;
+}
+
+.logo-patrocinador-2 {
+	width: auto;
+	height: 100px;
+	object-fit: cover;
+}
+
+.logo-patrocinador-3 {
+	width: auto;
+	height: 80px;
+	object-fit: cover;
+}
+
+.flex-item {
+    flex: 1 1 100%; /* Adjust the percentage as needed */
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
