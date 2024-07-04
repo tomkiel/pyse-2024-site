@@ -550,8 +550,8 @@ gap: 20px;
 }
 
 .flex-item {
-    flex: 1 1 100%; /* Adjust the percentage as needed */
     display: flex;
     justify-content: center;
-    margin: 10px;
+	align-items: center;
+	padding-inline: 20px;
 }
