@@ -1,0 +1,16 @@
+{{/* The main block for the home page */}}
+{{ define "main" }}
+
+{{ $fileName := "pages/home/home.html" }}
+{{/* Are there specials pages? */}}
+{{ if .Params.template }}
+  {{ $fileName = printf "pages/%s.html" .Params.template }}
+{{ end }}
+
+{{/* HTML template */}}
+<div class="main">
+  {{- partial $fileName . -}}
+</div>
+
+
+{{ end }}

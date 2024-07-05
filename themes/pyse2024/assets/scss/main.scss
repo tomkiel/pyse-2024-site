@@ -1,0 +1,22 @@
+@import "./theme/fonts";
+@import "./theme/resets";
+@import "./theme/colors";
+@import "./theme/variables";
+@import "./theme/animations";
+
+//HTML containers
+@import "./theme/html/html";
+@import "./theme/html/anchor";
+@import "./theme/html/heading";
+@import "./theme/html/list";
+@import "./theme/html/figure";
+@import "./theme/html/button";
+
+//Components
+@import "./partials/topheader";
+@import "./partials/appheader";
+@import "./partials/logo_slim";
+@import "./partials/components/divider";
+
+//Pages
+@import "./partials/pages/pages";

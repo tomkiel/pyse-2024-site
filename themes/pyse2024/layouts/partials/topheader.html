@@ -1,0 +1,33 @@
+{{ if eq .Site.Params.topHeader.isVisible true }}
+<div class="top-header text-100">
+  <div class="text-content">
+    <h6>{{ .Site.Params.topHeader.text }}</h6>
+  </div>
+  <div class="contact-links">
+    <ul class="navigation">
+      {{ range $index, $item := .Site.Params.ContactLinks }}
+      {{ $context := dict
+      "vendor" "tabler"
+      "name" $item.icon
+      }}
+      <li class="navigation-item">
+        <a href="{{ $item.url }}" target="_blank" title="{{ $item.title }}" class="link">
+          {{ partial "icons/icon" $context}}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="change-theme-color">
+    <label>
+      <input type="checkbox" />
+      <span class="theme-toggle">
+        <span class="toggle-theme-icon">
+          {{ partial "icons/icon" (dict "vendor" "tabler" "name" "sun") }}
+          {{ partial "icons/icon" (dict "vendor" "tabler" "name" "sun-off") }}
+        </span>
+      </span>
+    </label>
+  </div>
+</div>
+{{ end }}

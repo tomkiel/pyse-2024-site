@@ -1,0 +1,39 @@
+{{- partial "topheader.html" . -}}
+<header class="app-header">
+  <div class="header-container">
+    <div class="logo-container">
+      <a href="{{ .Site.BaseURL }}" class="link site-logo">
+        {{ partial "partials/logo-slim.html" . }}
+        <span>{{ .Site.Title }}</span>
+      </a>
+    </div>
+    <nav class="navigation-container" id="header_menu-itens">
+      <ul>
+        {{ range $index, $item := .Site.Params.HeaderMenu }}
+        <li>
+          <a href="{{ $item.url }}" title="{{ $item.title }}" {{ if $item.target }} target="{{ $item.target }}" {{
+            end}}>
+            {{ $item.title }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <div class="call-to-action">
+        <a href="/" role="button" class="secondary">Quero Participar</a>
+      </div>
+    </nav>
+    <div class="responsive-menu">
+      <button class="btn no-border" id="header_main-menu" aria-label="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="call-to-action">
+      <a href="/" role="button" class="secondary">Quero Participar</a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,9 @@
+html {
+    &.menu-open {
+        overflow: hidden;
+
+        body {
+            overflow: hidden;
+        }
+    }
+}

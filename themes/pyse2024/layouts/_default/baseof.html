@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{{/* determine the site language and help some acessibility tools */}}
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{/* determine the default site or project information */}}
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description }}">
+
+  {{/* the URL of the current page */}}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* import and build the scss files dynamic */}}
+  {{ $sass := resources.Get "scss/main.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+  {{/* determine the path off the generated .css bundle */}}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+
+<body>
+
+  {{- partial "header.html" . -}}
+  <div id="app-content">
+    {{- block "main" . }}{{- end }}
+  </div>
+  {{- partial "footer.html" . -}}
+
+  {{/* import and build the default js file */}}
+  {{- $options := dict "targetPath" "js/bundle.js" -}}
+  {{- $main := resources.Get "js/main.js" | js.Build $options | resources.Minify | fingerprint -}}
+  {{/* determine the path of the generated .js bundle */}}
+  <script src="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}" defer></script>
+</body>
+
+</html>

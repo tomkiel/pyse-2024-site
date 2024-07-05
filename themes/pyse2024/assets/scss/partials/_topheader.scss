@@ -1,0 +1,110 @@
+.top-header {
+  position: relative;
+  height: var(--th-top-header-height);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--responsive-container-padding);
+  background-color: var(--primary-color);
+
+  .text-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-links {
+    height: inherit;
+  }
+
+  .navigation {
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    .navigation-item {
+      height: inherit;
+      display: flex;
+      align-items: center;
+
+      a {
+        svg {
+          stroke-width: 1.5;
+          width: var(--th-font-size-xx);
+          height: var(--th-font-size-xx);
+        }
+      }
+    }
+  }
+
+  .change-theme-color {
+    height: inherit;
+    width: min-content;
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    label {
+      width: calc((var(--th-font-size-xx) + 0.2rem) * 2);
+      height: var(--th-font-size-xx);
+      position: relative;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .theme-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        background-color: #ccc;
+        transition: .4s;
+
+        .toggle-theme-icon {
+          display: block;
+          background-color: var(--color-white);
+          width: calc(var(--th-font-size-xx) + 0.2rem);
+          height: calc(var(--th-font-size-xx) + 0.2rem);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -0.1rem;
+          color: var(--link-color);
+          transition: .4s;
+
+          svg {
+            stroke-width: 1.5;
+            height: var(--th-font-size-xx);
+            width: var(--th-font-size-xx);
+            transition: .4s;
+            &:last-of-type {
+              display: none;
+            }
+          }
+        }
+      }
+
+      input:checked+.theme-toggle {
+        background-color: aqua;
+
+        .toggle-theme-icon {
+          transform: translateX(calc(var(--th-font-size-xx) + 0.2rem));
+
+          svg {
+            &:first-of-type {
+              display: none;
+            }
+            &:last-of-type {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

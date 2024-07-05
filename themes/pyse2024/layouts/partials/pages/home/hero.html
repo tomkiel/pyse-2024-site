@@ -1,0 +1,60 @@
+<section class="hero-section homepage">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h2>4 dias de conteúdo</h2>
+      <h1 class="title">Python Sudeste 2024</h1>
+      <div class="event-date">
+        <time datetime="{{ .Site.Params.event.start }}">
+          {{ $start := split (.Site.Params.event.start | time.Format "2, January") ", " }}
+          {{ index $start 0 }}
+          de
+          {{ strings.FirstUpper (index $start 1) }}
+        </time>
+        -
+        <time datetime="{{ .Site.Params.event.end }}">
+          {{ $end := split (.Site.Params.event.end | time.Format "2, January") ", " }}
+          {{ index $end 0 }}
+          de
+          {{ strings.FirstUpper (index $end 1) }}
+        </time>
+        de
+        <time datetime="{{ .Site.Params.event.end | time.Format " 2006" }}">
+          {{ .Site.Params.event.end | time.Format "2006" }}
+        </time>
+        -
+        <address>
+          {{ .Site.Params.event.address }}
+        </address>
+      </div>
+      <div class="event-timer">
+        <div id="counter-start-date" data-start="{{ .Site.Params.event.start }}"></div>
+        <div class="timer" id="counter-days">
+          0
+        </div>
+        <div class="timer" id="counter-hours">
+          0
+        </div>
+        <div class="timer" id="counter-minutes">
+          0
+        </div>
+        <div class="timer" id="counter-seconds">
+          0
+        </div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="floating-image">
+        {{ partial "picture" (dict "context" . "image" "images/photo_01.jpg" "alt" "dd") }}
+      </div>
+      <div class="floating-image">
+        {{ partial "picture" (dict "context" . "image" "images/photo_04.jpg" "alt" "dd") }}
+      </div>
+      <div class="floating-image">
+        {{ partial "picture" (dict "context" . "image" "images/photo_05.jpg" "alt" "dd") }}
+      </div>
+      <div class="floating-image">
+        {{ partial "picture" (dict "context" . "image" "images/photo_03.jpg" "alt" "dd") }}
+      </div>
+    </div>
+  </div>
+</section>

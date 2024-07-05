@@ -1,0 +1,78 @@
+* {
+
+  //theme settings
+  --th-top-header-height: 2.5rem;
+  --th-header-height: 4.5rem;
+  
+  @media screen and (max-width: 600px) {
+    --th-top-header-height: 2rem;
+    --th-header-height: 3.5rem;
+  }
+
+  //theme border
+  --th-border-color: var(--color-light-contrast);
+  --th-border: 1px solid var(--color-light-contrast);
+  --th-border-radius: 2rem;
+  --th-box-shadow: 0 10px 15px -3px var(--color-light-contrast), 0 4px 6px -4px var(--color-light-contrast);
+  --th-box-shadow-dark: 0 10px 15px -3px rgba(0.0.0, 0.01), 0 4px 6px -4px rgba(0.0.0, 0.01);
+
+  //theme spacing
+  --th-padding: 1rem;
+  --th-padding-x: 2rem;
+  --th-padding-sm: 0.5rem;
+
+  //font size
+  --th-font-size: 1rem;
+
+  //small font size
+  --th-font-size-s: 0.7rem;
+  --th-font-size-xs: 0.8rem;
+  --th-font-size-sm: 0.9rem;
+
+  //medium font size
+  --th-font-size-md: 1rem;
+
+  //large font size
+  --th-font-size-lg: 1.2rem;
+  --th-font-size-xl: 1.5rem;
+  --th-font-size-xxl: 2rem;
+  --th-font-size-xxxl: 2.5rem;
+
+  @media screen and (max-width: 600px) {
+    --th-font-size: 0.9rem;
+    --th-font-size-s: 0.6rem;
+    --th-font-size-xs: 0.7rem;
+    --th-font-size-sm: 0.8rem;
+    --th-font-size-md: 0.9rem;
+    --th-font-size-lg: 1rem;
+    --th-font-size-xl: 1.2rem;
+    --th-font-size-xxl: 1.5rem;
+    --th-font-size-xxxl: 2rem;
+  }
+
+  //font weight
+  --th-font-weight: 400;
+  --th-font-weight-bold: 600;
+  --th-font-weight-bold-x: 700;
+  --th-font-weight-bold-xx: 800;
+  --th-font-weight-bold-xxx: 900;
+
+  //display flex and grid
+  --th-column-gap: 0.5rem;
+
+  //responsive layout
+  --breakpoint-sm: 600px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  --responsive-container-padding: 0 calc((100% - 1360px) / 2);
+
+  @media all and (max-width: 600px) {
+    --responsive-container-padding: 0 5px;
+  }
+
+  @media all and (max-width: 1360px) {
+    --responsive-container-padding: 0 10px;
+  }
+
+}

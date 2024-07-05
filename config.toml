@@ -1,0 +1,77 @@
+baseURL = 'http://sudeste.python.org.br/'
+enableRobotsTXT = true
+theme = 'pyse2024'
+title = 'Python Sudeste 2024'
+defaultContentLanguage = "pt-br"
+
+[languages]
+[languages.pt-br]
+languageCode = "pt-br"
+
+[permalinks]
+fixed = ":title/"
+blog = ":slug"
+pages = ":slug"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+#event
+[params.event]
+start = "2024-07-06T08:30:00-0300"
+end = "2024-07-09T18:00:00-0300"
+address = "São Carlos, SP"
+
+#topheader
+[params.topHeader]
+isVisible = true
+text = "Python Sudeste 2024 - São Carlos - SP"
+
+#contact links
+[[params.contactLinks]]
+url = "https://github.com/grupy-sanca"
+icon = "brand-github-filled"
+title = "Github"
+
+[[params.contactLinks]]
+url = "https://www.instagram.com/pythonsudeste/"
+icon = "brand-instagram"
+title = "Instagram"
+
+[[params.contactLinks]]
+url = "https://www.facebook.com/pythonsudeste/"
+icon = "brand-facebook-filled"
+title = "Facebook"
+
+[[params.contactLinks]]
+url = "https://twitter.com/python_sudeste/"
+icon = "brand-twitter-filled"
+title = "Twitter"
+
+#Site menu
+[[params.headerMenu]]
+url = ""
+title = "Ingressos"
+
+[[params.headerMenu]]
+url = ""
+title = "Sobre o evento"
+
+[[params.headerMenu]]
+url = "#local"
+title = "Local"
+target = "_blank"
+
+[[params.headerMenu]]
+url = ""
+title = "Cronograma"
+
+[[params.headerMenu]]
+url = ""
+title = "Programação"
+
+#hugo modules
+[module]
+[[module.imports]]
+path = 'github.com/hugomods/icons/vendors/tabler'

@@ -1,0 +1,18 @@
+{{ $imageContent := resources.Get .image }}
+{{ $imageLQ := $imageContent.Resize "600x webp q80" }}
+{{ $imageMQ := $imageContent.Resize "1000x webp q80" }} 
+{{ $imageHQ := $imageContent.Resize "1400x webp q100" }}
+{{ $imageJPG := $imageContent.Resize "1400x jpg q100" }}
+<figure>
+    <picture>
+        <source srcset="{{ $imageLQ.Permalink }}" width="{{ $imageLQ.Width }}"
+            height="{{ $imageLQ.Height }}" media="(max-width: 800px)" type="image/webp">
+        <source srcset="{{ $imageMQ.Permalink }}" width="{{ $imageMQ.Width }}"
+            height="{{ $imageMQ.Height }}" media="(max-width: 1024px)" type="image/webp">
+        <source srcset="{{ $imageHQ.Permalink }}" width="{{ $imageHQ.Width }}"
+            height="{{ $imageHQ.Height }}" media="(min-width: 1024px)" type="image/webp">
+        <source srcset="{{ $imageJPG.Permalink }}" width="{{ $imageJPG.Width }}"
+            height="{{ $imageJPG.Height }}" media="(min-width: 1024px)" type="image/jpg">
+        <img src="{{ $imageContent.Permalink }}" alt="{{ .alt }}" loading=lazy>
+    </picture>
+</figure>

@@ -1,0 +1,36 @@
+.event-about {
+  //padding: var(--responsive-container-padding);
+  display: flex;
+  &__text, &__image{
+    flex: 1;
+  }
+  &__image {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    flex-direction: column-reverse;
+
+    &__image {
+      img {
+        width: 100%;
+        height: 12rem;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__text {
+      padding: var(--responsive-container-padding);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-light-blue);
+      
+    }
+  }
+}

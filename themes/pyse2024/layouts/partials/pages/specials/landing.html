@@ -1,0 +1,28 @@
+<div class="landing-page">
+  <div class="landing-content">
+    <div class="hero">
+      <div class="main-text">
+        <div class="top-title">
+          {{ partial "icons/icon" (dict "vendor" "tabler" "name" "alert-triangle-filled") }}
+          <h3>Atenção</h3>
+        </div>
+        <h2>Mudança da data do evento</h2>
+        <span class="text">
+          Com o objetivo de garantir a melhor experiência possível para todos os participantes, decidimos transferir o
+          evento para uma data futura, que será anunciada em breve.<br>
+          Agradecemos o opoio.
+        </span>
+        <a href="" class="action-link" role="button">Saiba mais</a>
+      </div>
+      <div class="main-image">
+        {{ 
+          partial "picture" 
+          (dict "context" . "image" "images/photo_01.jpg" "alt" "Fotografia com participantes da edição anterior do evento") 
+        }}
+      </div>
+    </div>
+  </div>
+  <video muted autoplay loop preload="true">
+    
+  </video>
+</div>

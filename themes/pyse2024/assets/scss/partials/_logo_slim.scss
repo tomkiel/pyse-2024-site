@@ -1,0 +1,32 @@
+svg {
+  &#logo-slim {
+    width: auto;
+    height: calc(var(--th-header-height) - 1rem);
+    #path1 {
+      fill: var(--color-green-yellow);
+    }
+
+    #path2 {
+      fill: var(--color-green-yellow);
+    }
+
+    #path3 {
+      fill: var(--color-space-cadet);
+      stroke-width: 1.5;
+      stroke: rgba(var(--rgb-secondary-color), 0.2);
+    }
+
+    #path4 {
+      fill: var(--color-space-cadet);
+      stroke-width: 1.5;
+      stroke: rgba(var(--rgb-secondary-color), 0.2);
+    }
+
+    #path5 {
+      fill: var(--color-space-cadet);
+      stroke-width: 1.5;
+      stroke: rgba(var(--rgb-secondary-color), 0.2);
+    }
+  }
+
+}

@@ -1,0 +1,106 @@
+$colors-light: (
+  //theme colors
+  color-white: #ffffff,
+  color-dark: #000,
+  color-text: #333,
+  color-lonk: #2F2F2F,
+  color-background: #fff,
+
+  color-accent: #3498db,
+  color-lighter-accent: #56A3FD,
+  color-darker-accent: #1E5984,
+  color-complementary-accent: #FD9356,
+
+  //border
+  color-border: #ccc,
+
+  //alerts and dialogs
+  color-info: #df7e9c,
+  color-success: #30a369,
+  color-warning: #dfcc30,
+  color-danger: #ea2e1a,
+
+  color-light-contrast: #dddddd,
+  color-light-background: #f7f7f7,
+
+  color-dark-contrast: #333,
+
+  //custom colors
+  color-green-yellow: #CAFF54,
+  color-space-cadet: #213559,
+  color-light-blue: #565FF2,
+  color-silver-sand: #C4C4C4,
+  color-gray: #7E7E7E,
+  color-piction-blue: #45AFDC
+
+);
+
+$colors-dark: (
+  //theme colors
+  color-white: #000,
+  color-dark: #fff,
+  text-color: #333,
+  link-color: #2F2F2F,
+  background-color: #fff,
+
+  accent-color: #3498db,
+  lighter-accent-color: #56A3FD,
+  darker-accent-color: #1E5984,
+  complementary-accent-color: #FD9356,
+
+  border-color: #ccc,
+
+  color-info: #df7e9c,
+  color-success: #30a369,
+  color-warning: #dfcc30,
+  color-danger: #ea2e1a,
+
+  color-light-contrast: #dddddd,
+  color-light-background: #f7f7f7,
+
+  color-dark-contrast: #333,
+
+  //custom colors
+  primary-color: #FDCB56,
+  secondary-color: #213559,
+  light-grey: #C4C4C4,
+  dark-grey: #7E7E7E,
+  light-blue: #45AFDC
+);
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@mixin generate_colors($colors) {
+
+  // Colors
+  @each $color, $value in $colors {
+    @if str-slice(#{$value}, 1, 1)=="#" {
+      --#{$color}: #{$value};
+    }
+
+    @else {
+      --#{$color}: var(--#{$value});
+    }
+  }
+
+  // RGB Colors
+  @each $color, $value in $colors {
+    @if str-slice(#{$value}, 1, 1)=="#" {
+      --rgb-#{$color}: #{hexToRGB($value)};
+    }
+
+    @else {
+      --rgb-#{$color}: var(--rgb-#{$value});
+    }
+  }
+}
+
+:root {
+  @include generate_colors($colors-light);
+}
+
+[data-theme="dark"] {
+  @include generate_colors($colors-dark);
+}

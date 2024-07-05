@@ -1,0 +1,62 @@
+// Simple Link
+a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--th-padding-sm);
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--darker-accent-color);
+  }
+
+  &.link {
+    column-gap: var(--th-column-gap);
+
+    &:hover {
+      background-color: transparent;
+      color: rgba(var(--rgb-link-color), 0.6);
+    }
+
+    &.outline {
+      border: var(--th-border);
+      border-radius: var(--th-border-radius);
+    }
+  }
+
+  &.site-logo {
+    &:hover {
+      svg {
+        scale: 1.05;
+      }
+    }
+  }
+
+  &[role="button"] {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--th-font-weight-bold);
+    padding: var(--th-padding);
+    border: var(--th-border);
+    //border-radius: var(--th-border-radius);
+
+    &.primary {
+      background-color: var(--primary-color);
+    }
+
+    &.secondary {
+      background-color: var(--secondary-color);
+      color: var(--color-white);
+      border-color: var(--secondary-color);
+    }
+
+    &.alternative {
+      background-color: var(--accent-color);
+      color: var(--color-white);
+    }
+  }
+}
