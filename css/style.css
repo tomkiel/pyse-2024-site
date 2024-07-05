@@ -251,6 +251,7 @@ h4 {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	text-align: center;
 }
 
 iframe {
@@ -554,4 +555,9 @@ gap: 20px;
     justify-content: center;
 	align-items: center;
 	padding-inline: 20px;
+}
+
+
+.tg td, .tg th {
+    min-width: 150px;
 }
