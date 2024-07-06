@@ -1,0 +1,27 @@
+:root {
+    /* colors */
+    --color-green-yellow: #CAFF54;
+    --color-light-blue: #565FF2;
+    --color-space-cadet: #213559;
+
+    /*alerts and dialogs*/
+    --color-info: #df7e9c;
+    --color-success: #30a369;
+    --color-warning: #dfcc30;
+    --color-danger: #ea2e1a;
+
+    /* variables */
+    --th-header-height: 2.5rem;
+    --th-box-shadow: 0 2px 2px -2px #9e9a9a, 0 4px 4px -4px #dddddd;
+    --th-box-shadow-dark: 0 10px 15px -3px rgba(0.0.0, 0.01), 0 4px 6px -4px rgba(0.0.0, 0.01);
+
+    --responsive-container-padding: 0 calc((100% - 1360px) / 2);
+
+    @media all and (max-width: 600px) {
+        --responsive-container-padding: 0 5px;
+    }
+
+    @media all and (max-width: 1360px) {
+        --responsive-container-padding: 0 10px;
+    }
+}
