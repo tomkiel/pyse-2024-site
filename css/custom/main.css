@@ -1,0 +1,5 @@
+/* import component styles */
+@import url('_root.css');
+@import url('_animations.css');
+@import url('_app-main-container.css');
+@import url('_header.css');

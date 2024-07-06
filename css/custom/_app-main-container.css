@@ -1,0 +1,18 @@
+.app-main-container {
+    padding: var(--responsive-container-padding);
+}
+
+.app-main-container .home-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.app-main-container .home-content section.image-hero-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}

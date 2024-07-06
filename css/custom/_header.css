@@ -1,0 +1,100 @@
+.app-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #1E5984;
+    box-shadow: var(--th-box-shadow);
+}
+
+.app-header nav.navbar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-green-yellow);
+    padding: 0;
+    margin: 0;
+    padding: var(--responsive-container-padding);
+    width: 100%;
+    transform: none;
+    position: unset;
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav a {
+    position: relative;
+    padding: calc(var(--th-header-height)/2) 1.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: #2F2F2F;
+    border: 1px solid transparent;
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav a.active {
+    background-color: var(--color-light-blue);
+    color: #fff;
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav a::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: 2px;
+    background-color: #fff;
+    pointer-events: none;
+    left: calc(1rem + 0%);
+    bottom: 20%;
+    transform-origin: right center;
+    transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform;
+    transform: scaleX(0);
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav a:hover {
+    background-color: var(--color-light-blue) !important;
+    color: #fff;
+}
+
+.app-header nav.navbar .navbar-collapse .navbar-nav a:hover::before {
+    transform-origin: left center;
+    transform: scaleX(1);
+}
+
+/* call action */
+.app-header nav.navbar .navbar-collapse a.ingressos-btn-navbar {
+    width: max-content;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    padding: 0.65rem 1rem;
+    border-radius: 0;
+
+}
+
+.app-header nav.navbar .navbar-collapse a.ingressos-btn-navbar:hover {
+    background-color: rgb(70, 78, 243);
+    color: #fff;
+    opacity: 1;
+}
+
+.app-header nav.navbar .navbar-collapse a.ingressos-btn-navbar::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    border: 5px solid var(--color-info);
+    min-height: calc(100% + .6rem);
+    min-width: calc(100% + .6rem);
+    transform: translate(-50%, -50%);
+    animation: ring 2s infinite;
+    transition: all .3s ease-in-out 0s;
+}
